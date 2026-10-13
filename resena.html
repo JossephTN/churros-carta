@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0D0D0D">
+<title>Déjanos tu reseña | CHURRO&#x27;S</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icono-512.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!--
+  Página puente a la que apunta el QR del pendón de reseñas. Paso 1: reseña en Google.
+  Paso 2: ver la carta. Si cambia el link de Google, se cambia acá y el impreso sigue sirviendo.
+  La genera generar_carta.py cuando marca.json tiene datos.resena_google.
+-->
+<style>
+  @font-face { font-family: 'Titulo'; src: url('fuentes/titulo.ttf'); font-display: swap; }
+@font-face { font-family: 'Texto'; src: url('fuentes/texto.ttf'); font-display: swap; }
+@font-face { font-family: 'Texto'; font-weight: 600; src: url('fuentes/texto_semibold.ttf'); font-display: swap; }
+  :root { --oscuro: #0D0D0D; --claro: #FFFFFF; --acento: #D18313; --sobre-acento: #0D0D0D; color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: var(--oscuro); color: var(--claro); font-family: 'Texto', system-ui, sans-serif; line-height: 1.45;
+    display: flex; align-items: center; justify-content: center; padding: 24px 16px; }
+  .caja { width: 100%; max-width: 440px; text-align: center; }
+  img { width: 130px; height: auto; background: var(--claro); border-radius: 50%; padding: 14px; }
+  h1 { font-family: 'Titulo', sans-serif; text-transform: uppercase; font-size: 30px; line-height: 1.1; margin: 18px 0 6px; }
+  p { opacity: .85; margin: 8px 0 0; }
+  .paso { background: color-mix(in srgb, var(--claro) 8%, transparent); border-radius: 16px; padding: 16px; margin-top: 18px; text-align: left; }
+  .paso b { font-family: 'Titulo', sans-serif; text-transform: uppercase; color: var(--acento); letter-spacing: .08em; font-size: 14px; }
+  a.btn { display: block; text-align: center; text-decoration: none; margin-top: 10px; padding: 14px; min-height: 48px; border-radius: 12px; font-family: 'Titulo', sans-serif;
+    font-weight: 700; text-transform: uppercase; letter-spacing: .04em; font-size: 17px; background: var(--acento); color: var(--sobre-acento); }
+  a.btn.sec { background: var(--claro); color: var(--oscuro); }
+</style>
+</head>
+<body>
+<div class="caja">
+  <img src="logo.png" alt="CHURRO&#x27;S">
+  <h1>¿Te gustó?</h1>
+  <p>Deja tu reseña real en Google Maps y llévate un churro relleno de manjar gratis. Muestra en caja la reseña ya publicada para recibirlo al momento.</p>
+  <div class="paso"><b>Paso 1</b><p>Cuéntalo en Google. Toma menos de un minuto.</p><a class="btn" href="https://g.page/r/Cdl9H49o_kz7EAE/review">Dejar mi reseña</a></div>
+  <div class="paso"><b>Paso 2</b><p>Mira la carta y pide lo que se te antoje.</p><a class="btn sec" href="index.html">Ver la carta</a></div>
+</div>
+</body>
+</html>
